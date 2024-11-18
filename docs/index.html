@@ -10,70 +10,73 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <!-- Language Selector -->
-    <div class="language-selector">
-        <div class="btn-group">
-            <button class="btn btn-dark dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fas fa-globe"></i>
-                <span class="current-language">English</span>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end">
-                <li><button class="dropdown-item" data-lang="en">English</button></li>
-                <li><button class="dropdown-item" data-lang="es">Español</button></li>
-                <li><button class="dropdown-item" data-lang="de">Deutsch</button></li>
-            </ul>
-        </div>
-    </div>
+<body class="font-body">
 
     <!-- Skip Links -->
     <a href="#main-content" class="skip-link" data-i18n="skip.main">Skip to main content</a>
     <a href="#nav-content" class="skip-link" data-i18n="skip.nav">Skip to navigation</a>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="/api/placeholder/50/50" alt="Star Wars Universe Logo" width="50" height="50">
-                <span data-i18n="brand">Star Wars Universe</span>
-            </a>
-
-            <!-- Accessibility Controls -->
-            <div class="d-flex align-items-center">
-                <button id="toggleContrast" class="btn btn-outline-light me-2" data-i18n-aria="accessibility.contrast">
-                    <i class="fas fa-adjust"></i>
+    <header class="d-flex flex-row align-items-center justify-content-between">
+        <!-- Language Selector -->
+        <div class="language-selector">
+            <div class="btn-group">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-globe"></i>
+                    <span class="current-language">English</span>
                 </button>
-                <button id="increaseFontSize" class="btn btn-outline-light me-2" data-i18n-aria="accessibility.fontSize">
-                    <i class="fas fa-text-height"></i>
-                </button>
-                <button id="toggleReader" class="btn btn-outline-light me-2" data-i18n-aria="accessibility.reader">
-                    <i class="fas fa-volume-up"></i>
-                </button>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#characters" data-i18n="nav.characters">Characters</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#planets" data-i18n="nav.planets">Planets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#vehicles" data-i18n="nav.vehicles">Vehicles</a>
-                    </li>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><button class="dropdown-item" data-lang="en">English</button></li>
+                    <li><button class="dropdown-item" data-lang="es">Español</button></li>
+                    <li><button class="dropdown-item" data-lang="de">Deutsch</button></li>
                 </ul>
             </div>
         </div>
-    </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./media/logo.png" alt="Star Wars Universe Logo" width="50" height="50">
+                    <span class="font-title" data-i18n="brand">Star Wars Universe</span>
+                </a>
+
+                <!-- Accessibility Controls -->
+                <div class="d-flex align-items-center">
+                    <button id="toggleContrast" class="btn btn-outline-light me-2" data-i18n-aria="accessibility.contrast">
+                        <i class="fas fa-adjust"></i>
+                    </button>
+                    <button id="increaseFontSize" class="btn btn-outline-light me-2" data-i18n-aria="accessibility.fontSize">
+                        <i class="fas fa-text-height"></i>
+                    </button>
+                    <button id="toggleReader" class="btn btn-outline-light me-2" data-i18n-aria="accessibility.reader">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#characters" data-i18n="nav.characters">Characters</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#planets" data-i18n="nav.planets">Planets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#vehicles" data-i18n="nav.vehicles">Vehicles</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero-section" aria-label="Welcome section">
         <div class="hero-content">
-            <h1 data-i18n="hero.title">Welcome to Star Wars Universe</h1>
+            <h1 class="font-title" data-i18n="hero.title">Welcome to Star Wars Universe</h1>
             <p data-i18n="hero.subtitle">Explore the galaxy far, far away...</p>
             <button class="btn btn-warning btn-lg" data-i18n="hero.cta">Start Your Journey</button>
         </div>

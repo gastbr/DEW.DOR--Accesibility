@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.font-title {
+    font-family: "Poller One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-body {
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 :root {
     --sw-yellow: #FFE81F;
     --sw-black: #121212;
@@ -112,15 +127,6 @@ button:focus {
 /* Focus Visible polyfill */
 .js-focus-visible :focus:not(.focus-visible) {
     outline: none;
-}
-
-.language-selector {
-    position: fixed;
-    z-index: 1031;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    align-items: center;
 }
 
 .hero-section {
