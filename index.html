@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Universe</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <div class="btn-group">
+            <button class="btn btn-dark dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-globe"></i>
+                <span class="current-language">English</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><button class="dropdown-item" data-lang="en">English</button></li>
+                <li><button class="dropdown-item" data-lang="es">Español</button></li>
+                <li><button class="dropdown-item" data-lang="de">Deutsch</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Skip Links -->
+    <a href="#main-content" class="skip-link" data-i18n="skip.main">Skip to main content</a>
+    <a href="#nav-content" class="skip-link" data-i18n="skip.nav">Skip to navigation</a>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/api/placeholder/50/50" alt="Star Wars Universe Logo" width="50" height="50">
+                <span data-i18n="brand">Star Wars Universe</span>
+            </a>
+
+            <!-- Accessibility Controls -->
+            <div class="d-flex align-items-center">
+                <button id="toggleContrast" class="btn btn-outline-light me-2" data-i18n-aria="accessibility.contrast">
+                    <i class="fas fa-adjust"></i>
+                </button>
+                <button id="increaseFontSize" class="btn btn-outline-light me-2" data-i18n-aria="accessibility.fontSize">
+                    <i class="fas fa-text-height"></i>
+                </button>
+                <button id="toggleReader" class="btn btn-outline-light me-2" data-i18n-aria="accessibility.reader">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#characters" data-i18n="nav.characters">Characters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#planets" data-i18n="nav.planets">Planets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#vehicles" data-i18n="nav.vehicles">Vehicles</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" aria-label="Welcome section">
+        <div class="hero-content">
+            <h1 data-i18n="hero.title">Welcome to Star Wars Universe</h1>
+            <p data-i18n="hero.subtitle">Explore the galaxy far, far away...</p>
+            <button class="btn btn-warning btn-lg" data-i18n="hero.cta">Start Your Journey</button>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content" class="container my-5">
+        <!-- Featured Characters -->
+        <section id="characters" class="mb-5">
+            <h2 data-i18n="characters.title">Featured Characters</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="/api/placeholder/400/300" class="card-img-top" alt="Luke Skywalker">
+                        <div class="card-body">
+                            <h3 class="card-title">Luke Skywalker</h3>
+                            <p class="card-text" data-i18n="characters.luke">A farm boy who became one of the greatest Jedi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media Player -->
+        <section id="media-section" class="mb-5">
+            <h2 data-i18n="media.title">Featured Media</h2>
+            <div class="media-player">
+                <video id="mainVideo" width="100%" controls>
+                    <source src="path_to_video.mp4" type="video/mp4">
+                    <track kind="captions" src="path_to_captions.vtt" label="English" default>
+                    <span data-i18n="media.unsupported">Your browser does not support the video tag.</span>
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 data-i18n="footer.quickLinks">Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light" data-i18n="footer.home">Home</a></li>
+                        <li><a href="#" class="text-light" data-i18n="nav.characters">Characters</a></li>
+                        <li><a href="#" class="text-light" data-i18n="nav.planets">Planets</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3 data-i18n="footer.legal">Legal</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light" data-i18n="footer.privacy">Privacy Policy</a></li>
+                        <li><a href="#" class="text-light" data-i18n="footer.terms">Terms of Service</a></li>
+                        <li><a href="#" class="text-light" data-i18n="footer.accessibility">Accessibility Statement</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="multilanguage.js"></script>
+
+</body>
+
+</html>
