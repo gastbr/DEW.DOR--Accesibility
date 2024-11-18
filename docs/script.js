@@ -14,7 +14,7 @@ $(document).ready(function () {
 
     // Font Size Control
     $('#increaseFontSize').click(function () {
-        fontSize = fontSize >= 24 ? 24 : fontSize + 2;
+        fontSize = (fontSize === 24) ? 16 : (fontSize + 2);
         $('body').css('font-size', fontSize + 'px');
         speak('Font size increased');
     });
@@ -23,6 +23,7 @@ $(document).ready(function () {
     $('#toggleContrast').click(function () {
         isHighContrast = !isHighContrast;
         $('body').toggleClass('high-contrast');
+        $('.card-body').toggleClass('high-contrast');
         speak(isHighContrast ? 'High contrast mode enabled' : 'High contrast mode disabled');
     });
 

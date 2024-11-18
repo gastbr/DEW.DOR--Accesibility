@@ -17,9 +17,46 @@
     <a href="#nav-content" class="skip-link" data-i18n="skip.nav">Skip to navigation</a>
 
     <!-- Navbar -->
-    <header class="d-flex flex-row align-items-center justify-content-between">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./media/logo.png" alt="Star Wars Universe Logo" width="50" height="50">
+                <span class="font-title" data-i18n="brand">Star Wars Universe</span>
+            </a>
+
+            <!-- Accessibility Controls -->
+            <div class="d-flex align-items-center">
+                <button id="toggleContrast" class="btn btn-outline-light me-2" data-i18n-aria="accessibility.contrast">
+                    <i class="fas fa-adjust"></i>
+                </button>
+                <button id="increaseFontSize" class="btn btn-outline-light me-2" data-i18n-aria="accessibility.fontSize">
+                    <i class="fas fa-text-height"></i>
+                </button>
+                <button id="toggleReader" class="btn btn-outline-light me-2" data-i18n-aria="accessibility.reader">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#characters" data-i18n="nav.characters">Characters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#planets" data-i18n="nav.planets">Planets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#vehicles" data-i18n="nav.vehicles">Vehicles</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <!-- Language Selector -->
-        <div class="language-selector">
+        <div class="language-selector px-5">
             <div class="btn-group">
                 <button class="btn btn-dark dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fas fa-globe"></i>
@@ -32,46 +69,8 @@
                 </ul>
             </div>
         </div>
+    </nav>
 
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="./media/logo.png" alt="Star Wars Universe Logo" width="50" height="50">
-                    <span class="font-title" data-i18n="brand">Star Wars Universe</span>
-                </a>
-
-                <!-- Accessibility Controls -->
-                <div class="d-flex align-items-center">
-                    <button id="toggleContrast" class="btn btn-outline-light me-2" data-i18n-aria="accessibility.contrast">
-                        <i class="fas fa-adjust"></i>
-                    </button>
-                    <button id="increaseFontSize" class="btn btn-outline-light me-2" data-i18n-aria="accessibility.fontSize">
-                        <i class="fas fa-text-height"></i>
-                    </button>
-                    <button id="toggleReader" class="btn btn-outline-light me-2" data-i18n-aria="accessibility.reader">
-                        <i class="fas fa-volume-up"></i>
-                    </button>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-
-                <div class="collapse navbar-collapse" id="navbarContent">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#characters" data-i18n="nav.characters">Characters</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#planets" data-i18n="nav.planets">Planets</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#vehicles" data-i18n="nav.vehicles">Vehicles</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
 
     <!-- Hero Section -->
     <section class="hero-section" aria-label="Welcome section">
@@ -90,7 +89,7 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="/api/placeholder/400/300" class="card-img-top" alt="Luke Skywalker">
+                        <img src="./media/skywalker.jpg" class="card-img-top" alt="Luke Skywalker">
                         <div class="card-body">
                             <h3 class="card-title">Luke Skywalker</h3>
                             <p class="card-text" data-i18n="characters.luke">A farm boy who became one of the greatest Jedi.</p>
