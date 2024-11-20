@@ -11,6 +11,7 @@ Make an accessible website about Star Wars Universe, using the Bootstrap Framew
 * Include 3 (React/JQuery) elements at least
 * Reach WAI-AA - Accessibility Statement 
 * Licence and WAI certification
+
 All the projects will be exposed in the classroom.
 https://stackoverflow.com/questions/15653145/using-google-text-to-speech-in-javascript
 
