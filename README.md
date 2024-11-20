@@ -16,9 +16,9 @@ All the projects will be exposed in the classroom.
 https://stackoverflow.com/questions/15653145/using-google-text-to-speech-in-javascript
 
 **Rúbrica de Evaluación: Diseño de Interfaz Gráfica Web**
-**Criterio**
-**0 (No cumplido)**
-**1 (Cumplido)**
+
+**Criterio / 0 (No cumplido) / 1 (Cumplido)**
+
 **1. Desarrollo de las especificaciones de partida**
 **(1 punto)**
 No se desarrollan ni presentan especificaciones claras y detalladas del proyecto.
@@ -64,7 +64,8 @@ El contraste es insuficiente, el uso de ancho de banda multimedia es inadecuado 
 El contraste es adecuado, el ancho de banda multimedia está optimizado y el layout es equilibrado, funcional y accesible.
 
 **Puntuación Total:**
-* **Puntuación máxima: 10 puntos** 
+* **Puntuación máxima: 10 puntos**
+
 **Escala de valoración:**
    * **0 puntos:** No se cumple con el criterio.
    * **1 punto:** Se cumple con el criterio de manera adecuada.
