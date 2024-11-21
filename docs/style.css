@@ -44,6 +44,13 @@
     border: 2px solid black !important;
 }
 
+.language-selector ul {
+    background-color: gray;
+}
+
+.high-contrast .language-selector ul {
+    background-color: white;
+}
 /* Font Size Controls */
 .font-large {
     font-size: 120%;
@@ -84,6 +91,7 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
     transition: transform 0.3s;
+    color: white;
 }
 
 .card:hover {
