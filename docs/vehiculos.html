@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="planets.css">
 </head>
+
 <body>
     <!-- Navbar -->
 
@@ -50,24 +52,22 @@
             </div>
         </div>
     </nav>
-        <!-- Hero Section -->
-        <section class="hero-section" aria-label="Welcome section">
-            <div class="hero-content">
-                <h1 class="font-title" data-i18n="hero.title">Welcome to Star Wars Universe</h1>
-                <p data-i18n="hero.subtitle">Explore the galaxy far, far away...</p>
-                <button class="btn btn-warning btn-lg" data-i18n="hero.cta">Start Your Journey</button>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero-section" aria-label="Welcome section">
+        <div class="hero-content">
+            <h1 class="font-title" data-i18n="hero.title">Welcome to Star Wars Universe</h1>
+            <p data-i18n="hero.subtitle">Explore the galaxy far, far away...</p>
+            <button class="btn btn-warning btn-lg" data-i18n="hero.cta">Start Your Journey</button>
+        </div>
+    </section>
     <header class="navbar">
         <nav>
-            <h1 class="font-title">Planetas de Star Wars</h1>
+            <h1 class="font-title">Star Wars Vehicles</h1>
         </nav>
     </header>
-    <main>
-        <section id="planets-container" class="container">
-            <!-- Los planetas se cargarán aquí dinámicamente -->
-        </section>
-    </main>
+    <section id="vehicle-container" class="vehicle-container">
+        <!-- Los vehículos se cargarán aquí dinámicamente -->
+    </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-light py-4">
@@ -84,9 +84,13 @@
                 <div class="col-md-4">
                     <h3 data-i18n="footer.legal">Legal</h3>
                     <ul class="list-unstyled">
-                        <li><a href="https://privacy.thewaltdisneycompany.com/en/" target="_blank" class="text-light" data-i18n="footer.privacy">Privacy Policy</a></li>
-                        <li><a href="https://disneytermsofuse.com/"  target="_blank" class="text-light" data-i18n="footer.terms">Terms of Service</a></li>
-                        <li><a href="https://wave.webaim.org/report#/https://gastbr.github.io/DEW.DOR--Accesibility/" target="_blank" class="text-light" data-i18n="footer.accessibility">Accessibility Statement</a>
+                        <li><a href="https://privacy.thewaltdisneycompany.com/en/" target="_blank" class="text-light"
+                                data-i18n="footer.privacy">Privacy Policy</a></li>
+                        <li><a href="https://disneytermsofuse.com/" target="_blank" class="text-light"
+                                data-i18n="footer.terms">Terms of Service</a></li>
+                        <li><a href="https://wave.webaim.org/report#/https://gastbr.github.io/DEW.DOR--Accesibility/"
+                                target="_blank" class="text-light" data-i18n="footer.accessibility">Accessibility
+                                Statement</a>
                         </li>
                     </ul>
                 </div>
@@ -101,5 +105,7 @@
     <script src="script.js"></script>
     <script src="planets.js"></script>
     <script src="multilanguage.js"></script>
+    <script src="vehiculos.js"></script>
 </body>
+
 </html>
