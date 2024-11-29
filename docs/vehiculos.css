@@ -99,6 +99,12 @@ body {
     background: rgba(0, 0, 0, 0.7);
     padding: 2rem;
     border-radius: 10px;
+    z-index: 1;
+}
+
+canvas {
+    position: absolute;
+    overflow: hidden;
 }
 
 .hero-content h2 {

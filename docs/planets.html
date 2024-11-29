@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="planets.css">
 </head>
-<body>
-    <!-- Navbar -->
 
+<body class="font-body">
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -23,12 +24,14 @@
                 <button id="toggleContrast" class="btn btn-outline-light me-2" data-i18n-aria="accessibility.contrast">
                     <i class="fas fa-adjust"></i>
                 </button>
-                <button id="increaseFontSize" class="btn btn-outline-light me-2"
-                    data-i18n-aria="accessibility.fontSize">
+                <button id="increaseFontSize" class="btn btn-outline-light me-2" data-i18n-aria="accessibility.fontSize">
                     <i class="fas fa-text-height"></i>
                 </button>
                 <button id="toggleReader" class="btn btn-outline-light me-2" data-i18n-aria="accessibility.reader">
                     <i class="fas fa-volume-up"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
 
@@ -44,24 +47,39 @@
                         <a class="nav-link" href="vehiculos.html" data-i18n="nav.vehicles">Vehicles</a>
                     </li>
                 </ul>
+                <!-- Language Selector -->
+                <div class="language-selector">
+                    <div class="btn-group">
+                        <button class="btn btn-dark dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe"></i>
+                            <span class="current-language">English</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><button class="dropdown-item" data-lang="en">English</button></li>
+                            <li><button class="dropdown-item" data-lang="es">Español</button></li>
+                            <li><button class="dropdown-item" data-lang="de">Deutsch</button></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
-        <!-- Hero Section -->
-        <section class="hero-section" aria-label="Welcome section">
-            <div class="hero-content">
-                <h1 class="font-title" data-i18n="hero.title">Welcome to Star Wars Universe</h1>
-                <p data-i18n="hero.subtitle">Explore the galaxy far, far away...</p>
-                <button class="btn btn-warning btn-lg" data-i18n="hero.cta">Start Your Journey</button>
-            </div>
-        </section>
+
+    <!-- Hero Section -->
+    <section class="hero-section" aria-label="Welcome section">
+        <div class="hero-content">
+            <h1 class="font-title" data-i18n="hero.title">Welcome to Star Wars Universe</h1>
+            <p data-i18n="hero.subtitle">Explore the galaxy far, far away...</p>
+            <button class="btn btn-warning btn-lg" data-i18n="hero.cta">Start Your Journey</button>
+        </div>
+    </section>
     <header class="navbar">
         <nav>
             <h1 class="font-title">Planetas de Star Wars</h1>
         </nav>
     </header>
     <main>
-        <section id="planets-container" class="container">
+        <section id="planets-container" class="container-planets">
             <!-- Los planetas se cargarán aquí dinámicamente -->
         </section>
     </main>
@@ -70,7 +88,7 @@
     <footer class="bg-dark text-light py-4">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <h3 data-i18n="footer.quickLinks">Quick Links</h3>
                     <ul class="list-unstyled">
                         <li><a href="index.html" class="text-light" data-i18n="footer.home">Home</a></li>
@@ -78,16 +96,28 @@
                         <li><a href="planets.html" class="text-light" data-i18n="nav.planets">Planets</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <h3 data-i18n="footer.legal">Legal</h3>
                     <ul class="list-unstyled">
                         <li><a href="https://privacy.thewaltdisneycompany.com/en/" target="_blank" class="text-light" data-i18n="footer.privacy">Privacy Policy</a></li>
-                        <li><a href="https://disneytermsofuse.com/"  target="_blank" class="text-light" data-i18n="footer.terms">Terms of Service</a></li>
-                        <li><a href="https://wave.webaim.org/report#/https://gastbr.github.io/DEW.DOR--Accesibility/" target="_blank" class="text-light" data-i18n="footer.accessibility">Accessibility Statement</a>
+                        <li><a href="https://disneytermsofuse.com/" target="_blank" class="text-light" data-i18n="footer.terms">Terms of Service</a></li>
+                        <li><a href="https://wave.webaim.org/report#/https://gastbr.github.io/DEW.DOR--Accesibility/" target="_blank" class="text-light" data-i18n="footer.accessibility">Accessibility
+                                Statement</a>
                         </li>
                     </ul>
                 </div>
-
+                <div class="col-md-3">
+                    <h3>Accesibility</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="https://wave.webaim.org/report#/https://gastbr.github.io/DEW.DOR--Accesibility/" target="_blank" class="text-light"><img class="accessibility-logo" src="https://certiaccesibilidad.technosite.es/Recursos/GetImage.aspx?id=14&Tipo=1" alt="Logo Ilunion"></a></li>
+                        <li><a href="https://wave.webaim.org/report#/https://gastbr.github.io/DEW.DOR--Accesibility/" target="_blank" class="text-light"><img class="accessibility-logo" src="https://www.caixabank.es/deployedfiles/particulares/Estaticos/Imagenes/General/Sello-AENOR_adecuacion_funcional.png" alt="Logo AENOR"></a></li>
+                        <li><a href="https://wave.webaim.org/report#/https://gastbr.github.io/DEW.DOR--Accesibility/" target="_blank" class="text-light"><img class="accessibility-logo" src="https://www.caixabank.es/deployedfiles/particulares/Estaticos/Imagenes/Seguridad/ISO-27001.jpg" alt="Logo BSI"></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Copyright</h3>
+                    <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/gastbr/DEW.DOR--Accesibility">DOR - Accesibility</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/gastbr/">Gamigui</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+                </div>
             </div>
         </div>
     </footer>
@@ -98,5 +128,7 @@
     <script src="script.js"></script>
     <script src="planets.js"></script>
     <script src="multilanguage.js"></script>
+    <script src="canvas.js"></script>
 </body>
+
 </html>

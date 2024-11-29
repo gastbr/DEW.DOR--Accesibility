@@ -12,7 +12,6 @@
 
 <body class="font-body">
 
-
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation">
         <div class="container">
@@ -26,8 +25,7 @@
                 <button id="toggleContrast" class="btn btn-outline-light me-2" data-i18n-aria="accessibility.contrast">
                     <i class="fas fa-adjust"></i>
                 </button>
-                <button id="increaseFontSize" class="btn btn-outline-light me-2"
-                    data-i18n-aria="accessibility.fontSize">
+                <button id="increaseFontSize" class="btn btn-outline-light me-2" data-i18n-aria="accessibility.fontSize">
                     <i class="fas fa-text-height"></i>
                 </button>
                 <button id="toggleReader" class="btn btn-outline-light me-2" data-i18n-aria="accessibility.reader">
@@ -50,21 +48,20 @@
                         <a class="nav-link" href="vehiculos.html" data-i18n="nav.vehicles">Vehicles</a>
                     </li>
                 </ul>
-            </div>
-        </div>
-        <!-- Language Selector -->
-        <div class="language-selector px-5">
-            <div class="btn-group">
-                <button class="btn btn-dark dropdown-toggle" type="button" id="languageDropdown"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fas fa-globe"></i>
-                    <span class="current-language">English</span>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end">
-                    <li><button class="dropdown-item" data-lang="en">English</button></li>
-                    <li><button class="dropdown-item" data-lang="es">Español</button></li>
-                    <li><button class="dropdown-item" data-lang="de">Deutsch</button></li>
-                </ul>
+                <!-- Language Selector -->
+                <div class="language-selector">
+                    <div class="btn-group">
+                        <button class="btn btn-dark dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe"></i>
+                            <span class="current-language">English</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><button class="dropdown-item" data-lang="en">English</button></li>
+                            <li><button class="dropdown-item" data-lang="es">Español</button></li>
+                            <li><button class="dropdown-item" data-lang="de">Deutsch</button></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -75,8 +72,7 @@
         <div class="hero-content">
             <h1 class="font-title" data-i18n="hero.title">Welcome to Star Wars Universe</h1>
             <p data-i18n="hero.subtitle">Explore the galaxy far, far away...</p>
-            <a href="https://www.starwars.com/" target="_blank" class="btn btn-warning btn-lg"
-                data-i18n="hero.cta">Start Your Journey</a>
+            <a href="https://www.starwars.com/" target="_blank" class="btn btn-warning btn-lg" data-i18n="hero.cta">Start Your Journey</a>
         </div>
     </section>
 
@@ -89,18 +85,7 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="./media/skywalker.jpg" class="card-img-top" alt="Luke Skywalker">
-                        <div class="card-body">
-                            <h3 class="card-title">Luke Skywalker</h3>
-                            <p class="card-text" style="display: none" data-i18n="characters.luke">A farm boy who
-                                became one of the greatest Jedi.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 cardImg">
-                        <img src="https://scontent-mad1-1.xx.fbcdn.net/v/t39.30808-6/354845650_2503498239803563_8763017748727203695_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=2285d6&_nc_ohc=hK5j-rHilw0Q7kNvgGwblSj&_nc_zt=23&_nc_ht=scontent-mad1-1.xx&_nc_gid=AjRKBpndF04-o6_s5ux3U-p&oh=00_AYCL6kxUQvex7-s0ckmrr9j7oelhAdp885IRtfD2UOknYg&oe=674AD414"
-                            class="card-img-top" alt="Darth Vader">
+                        <img src="https://scontent-mad1-1.xx.fbcdn.net/v/t39.30808-6/354845650_2503498239803563_8763017748727203695_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=2285d6&_nc_ohc=hK5j-rHilw0Q7kNvgGwblSj&_nc_zt=23&_nc_ht=scontent-mad1-1.xx&_nc_gid=AjRKBpndF04-o6_s5ux3U-p&oh=00_AYCL6kxUQvex7-s0ckmrr9j7oelhAdp885IRtfD2UOknYg&oe=674AD414" class="card-img-top" alt="Darth Vader">
                         <div class="card-body">
                             <h3 class="card-title">Darth Vader</h3>
                             <p class="card-text" style="display: none" data-i18n="characters.vader">A powerful Sith
@@ -110,8 +95,17 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="https://i.ibb.co/8mwNJzw/3a381bea-7119-46cc-9ed4-76ca89bee20c.jpg"
-                            class="card-img-top" alt="Princess Leia">
+                        <img src="./media/skywalker.jpg" class="card-img-top" alt="Luke Skywalker">
+                        <div class="card-body">
+                            <h3 class="card-title">Luke Skywalker</h3>
+                            <p class="card-text" style="display: none" data-i18n="characters.luke">A farm boy who
+                                became one of the greatest Jedi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://i.ibb.co/8mwNJzw/3a381bea-7119-46cc-9ed4-76ca89bee20c.jpg" class="card-img-top" alt="Princess Leia">
                         <div class="card-body">
                             <h3 class="card-title">Princess Leia</h3>
                             <p class="card-text" style="display: none" data-i18n="characters.leia">A brave and
@@ -121,8 +115,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="https://i.ibb.co/bvxbRgZ/f198e7d3-3a1a-45f6-85a5-991f7dedc237.jpg"
-                            class="card-img-top" alt="Han Solo">
+                        <img src="https://i.ibb.co/bvxbRgZ/f198e7d3-3a1a-45f6-85a5-991f7dedc237.jpg" class="card-img-top" alt="Han Solo">
                         <div class="card-body">
                             <h3 class="card-title">Han Solo</h3>
                             <p class="card-text" style="display: none" data-i18n="characters.han">A charismatic
@@ -132,8 +125,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="https://i.ibb.co/WW0K9LZ/9a3baa53-9854-4eb5-99ed-d713b1799d5d.jpg"
-                            class="card-img-top" alt="Chewbacca">
+                        <img src="https://i.ibb.co/WW0K9LZ/9a3baa53-9854-4eb5-99ed-d713b1799d5d.jpg" class="card-img-top" alt="Chewbacca">
                         <div class="card-body">
                             <h3 class="card-title">Chewbacca</h3>
                             <p class="card-text" style="display: none" data-i18n="characters.chewie">A loyal Wookiee
@@ -143,8 +135,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="https://i.ibb.co/1nxNj5H/b528ab38-9bb6-47ab-bcd7-022fb7a93e56.jpg"
-                            class="card-img-top" alt="Yoda">
+                        <img src="https://i.ibb.co/1nxNj5H/b528ab38-9bb6-47ab-bcd7-022fb7a93e56.jpg" class="card-img-top" alt="Yoda">
                         <div class="card-body">
                             <h3 class="card-title">Yoda</h3>
                             <p class="card-text" style="display: none" data-i18n="characters.yoda">A wise and
@@ -160,10 +151,7 @@
         <section id="media-section" class="mb-5">
             <h2 data-i18n="media.title">Featured Media</h2>
             <div class="media-player">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/-bzWSJG93P8?si=4aVO6K84K3gc74DV"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/-bzWSJG93P8?si=4aVO6K84K3gc74DV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
     </main>
@@ -172,24 +160,36 @@
     <footer class="bg-dark text-light py-4">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <h3 data-i18n="footer.quickLinks">Quick Links</h3>
                     <ul class="list-unstyled">
                         <li><a href="index.html" class="text-light" data-i18n="footer.home">Home</a></li>
-                        <li><a href="#characters" class="text-light" data-i18n="nav.characters">Characters</a></li>
+                        <li><a href="index.html" class="text-light" data-i18n="nav.characters">Characters</a></li>
                         <li><a href="planets.html" class="text-light" data-i18n="nav.planets">Planets</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <h3 data-i18n="footer.legal">Legal</h3>
                     <ul class="list-unstyled">
                         <li><a href="https://privacy.thewaltdisneycompany.com/en/" target="_blank" class="text-light" data-i18n="footer.privacy">Privacy Policy</a></li>
-                        <li><a href="https://disneytermsofuse.com/"  target="_blank" class="text-light" data-i18n="footer.terms">Terms of Service</a></li>
-                        <li><a href="https://wave.webaim.org/report#/https://gastbr.github.io/DEW.DOR--Accesibility/" target="_blank" class="text-light" data-i18n="footer.accessibility">Accessibility Statement</a>
+                        <li><a href="https://disneytermsofuse.com/" target="_blank" class="text-light" data-i18n="footer.terms">Terms of Service</a></li>
+                        <li><a href="https://wave.webaim.org/report#/https://gastbr.github.io/DEW.DOR--Accesibility/" target="_blank" class="text-light" data-i18n="footer.accessibility">Accessibility
+                                Statement</a>
                         </li>
                     </ul>
                 </div>
-
+                <div class="col-md-3">
+                    <h3>Accesibility</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="https://wave.webaim.org/report#/https://gastbr.github.io/DEW.DOR--Accesibility/" target="_blank" class="text-light"><img class="accessibility-logo" src="https://certiaccesibilidad.technosite.es/Recursos/GetImage.aspx?id=14&Tipo=1" alt="Logo Ilunion"></a></li>
+                        <li><a href="https://wave.webaim.org/report#/https://gastbr.github.io/DEW.DOR--Accesibility/" target="_blank" class="text-light"><img class="accessibility-logo" src="https://www.caixabank.es/deployedfiles/particulares/Estaticos/Imagenes/General/Sello-AENOR_adecuacion_funcional.png" alt="Logo AENOR"></a></li>
+                        <li><a href="https://wave.webaim.org/report#/https://gastbr.github.io/DEW.DOR--Accesibility/" target="_blank" class="text-light"><img class="accessibility-logo" src="https://www.caixabank.es/deployedfiles/particulares/Estaticos/Imagenes/Seguridad/ISO-27001.jpg" alt="Logo BSI"></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Copyright</h3>
+                    <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/gastbr/DEW.DOR--Accesibility">DOR - Accesibility</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/gastbr/">Gamigui</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+                </div>
             </div>
         </div>
     </footer>
@@ -197,8 +197,8 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
     <script src="multilanguage.js"></script>
+    <script src="script.js"></script>
     <script src="canvas.js"></script>
 
 </body>

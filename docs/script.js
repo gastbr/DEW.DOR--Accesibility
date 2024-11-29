@@ -106,9 +106,11 @@ $(document).ready(function () {
     });
 });
 
+
 $(document).ready(function () {
     $('.card').each(function () {
-        var texto = $(this).find('.card-text').attr('data-i18n');
+        const texto = $(this).find('.card-text').text();
+        console.log(texto);
         $(this).append('<div class="texto-absoluto"><p class="texto">' + texto + '</p></div>');
     });
 });

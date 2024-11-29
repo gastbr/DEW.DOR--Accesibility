@@ -18,7 +18,12 @@ const translations = {
         },
         characters: {
             title: "Featured Characters",
-            luke: "A farm boy who became one of the greatest Jedi."
+            luke: "A farm boy who became one of the greatest Jedi.",
+            vader: "A powerful Sith Lord who served the Galactic Empire.",
+            leia: "A brave and determined leader of the Rebel Alliance.",
+            han: "A charismatic smuggler who became a key figure in the Rebel Alliance.",
+            chewie: "A loyal Wookiee co-pilot and friend of Han Solo.",
+            yoda: "A wise and powerful Jedi Master who trained many Jedi."
         },
         media: {
             title: "Featured Media",
@@ -56,7 +61,12 @@ const translations = {
         },
         characters: {
             title: "Personajes Destacados",
-            luke: "Un granjero que se convirtió en uno de los mejores Jedi."
+            luke: "Un granjero que se convirtió en uno de los Jedi más grandes.",
+            vader: "Un poderoso Lord Sith que sirvió al Imperio Galáctico.",
+            leia: "Una líder valiente y decidida de la Alianza Rebelde.",
+            han: "Un carismático contrabandista que se convirtió en una figura clave de la Alianza Rebelde.",
+            chewie: "Un leal copiloto wookiee y amigo de Han Solo.",
+            yoda: "Un sabio y poderoso Maestro Jedi que entrenó a muchos Jedi."
         },
         media: {
             title: "Contenido Destacado",
@@ -93,8 +103,13 @@ const translations = {
             cta: "Starte deine Reise"
         },
         characters: {
-            title: "Beliebte Charaktere",
-            luke: "Ein Farmjunge, der zu einem der größten Jedi wurde."
+            title: "Wichtige Charaktere",
+            luke: "Ein Farmerjunge, der zu einem der größten Jedi wurde.",
+            vader: "Ein mächtiger Sith-Lord, der dem Galaktischen Imperium diente.",
+            leia: "Eine mutige und entschlossene Anführerin der Rebellenallianz.",
+            han: "Ein charismatischer Schmuggler, der zu einer Schlüsselfigur der Rebellenallianz wurde.",
+            chewie: "Ein treuer Wookiee-Co-Pilot und Freund von Han Solo.",
+            yoda: "Ein weiser und mächtiger Jedi-Meister, der viele Jedi ausgebildet hat."
         },
         media: {
             title: "Ausgewählte Medien",
@@ -119,10 +134,10 @@ const translations = {
 // Function to update text content based on selected language
 function updateContent(lang) {
     document.documentElement.lang = lang;
-    // document.querySelector('.current-language').textContent =
-    //     lang === 'en' ? 'English' :
-    //         lang === 'es' ? 'Español' :
-    //             'Deutsch';
+    document.querySelector('.current-language').textContent =
+        lang === 'en' ? 'English' :
+            lang === 'es' ? 'Español' :
+                'Deutsch';
 
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const keys = element.getAttribute('data-i18n').split('.');
