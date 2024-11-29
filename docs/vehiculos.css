@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.font-title {
+    font-family: "Poller One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-body {
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --sw-yellow: #FFE81F;
+    --sw-black: #121212;
+    --sw-dark-gray: #333;
+    --sw-light-gray: #dcdcdc;
+    --sw-primary: #FFE81F;
+}
+
+/* Accessibility Styles */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: var(--sw-yellow);
+    color: black;
+}
+
+.skip-link:focus {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* High Contrast Mode */
+.high-contrast {
+    background: white !important;
+    color: black !important;
+}
+
+.high-contrast .card {
+    background: white !important;
+    border: 2px solid black !important;
+}
+
+.language-selector ul {
+    background-color: gray;
+}
+
+.high-contrast .language-selector ul {
+    background-color: white;
+}
+
+/* Font Size Controls */
+.font-large {
+    font-size: 120%;
+}
+
+.font-larger {
+    font-size: 140%;
+}
+
+/* Custom Styles */
+body {
+    background-color: var(--sw-black);
+    color: white;
+    margin: 0;
+    font-size: 16px;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+    text-align: center;
+}
+
+.navbar h1 {
+    color: var(--sw-yellow);
+    font-size: 2rem;
+    margin: 0;
+}
+
+.hero-section {
+    position: relative;
+    min-height: 500px;
+    background: url('/api/placeholder/1920/500') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    color: white;
+    font-family: "Poller One", serif;
+}
+
+.vehicle-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.vehicle-div {
+    display: flex;
+    justify-content: center;  /* Centrar los contenedores */
+    align-items: center;
+    flex-direction: column;
+}
+
+.vehicle-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    transition: transform 0.3s;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-5px);
+    z-index: 10;
+}
+
+.vehicle-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.vehicle-card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.vehicle-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.vehicle-card p {
+    font-size: 1rem;
+}
+
+footer {
+    background-color: var(--sw-black);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+
+
+
+

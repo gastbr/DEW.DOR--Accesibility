@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetas de Star Wars</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="planets.css">
+</head>
+<body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./media/logo.png" alt="Star Wars Universe Logo" width="50" height="50">
+                <span class="font-title" data-i18n="brand">Star Wars Universe</span>
+            </a>
+
+            <!-- Accessibility Controls -->
+            <div class="d-flex align-items-center">
+                <button id="toggleContrast" class="btn btn-outline-light me-2" data-i18n-aria="accessibility.contrast">
+                    <i class="fas fa-adjust"></i>
+                </button>
+                <button id="increaseFontSize" class="btn btn-outline-light me-2"
+                    data-i18n-aria="accessibility.fontSize">
+                    <i class="fas fa-text-height"></i>
+                </button>
+                <button id="toggleReader" class="btn btn-outline-light me-2" data-i18n-aria="accessibility.reader">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-i18n="nav.characters">Characters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="planets.html" data-i18n="nav.planets">Planets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vehiculos.html" data-i18n="nav.vehicles">Vehicles</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <!-- Hero Section -->
+        <section class="hero-section" aria-label="Welcome section">
+            <div class="hero-content">
+                <h1 class="font-title" data-i18n="hero.title">Welcome to Star Wars Universe</h1>
+                <p data-i18n="hero.subtitle">Explore the galaxy far, far away...</p>
+                <button class="btn btn-warning btn-lg" data-i18n="hero.cta">Start Your Journey</button>
+            </div>
+        </section>
+    <header class="navbar">
+        <nav>
+            <h1 class="font-title">Planetas de Star Wars</h1>
+        </nav>
+    </header>
+    <main>
+        <section id="planets-container" class="container">
+            <!-- Los planetas se cargarán aquí dinámicamente -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 data-i18n="footer.quickLinks">Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light" data-i18n="footer.home">Home</a></li>
+                        <li><a href="index.html" class="text-light" data-i18n="nav.characters">Characters</a></li>
+                        <li><a href="planets.html" class="text-light" data-i18n="nav.planets">Planets</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3 data-i18n="footer.legal">Legal</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="https://privacy.thewaltdisneycompany.com/en/" target="_blank" class="text-light" data-i18n="footer.privacy">Privacy Policy</a></li>
+                        <li><a href="https://disneytermsofuse.com/"  target="_blank" class="text-light" data-i18n="footer.terms">Terms of Service</a></li>
+                        <li><a href="https://wave.webaim.org/report#/https://gastbr.github.io/DEW.DOR--Accesibility/" target="_blank" class="text-light" data-i18n="footer.accessibility">Accessibility Statement</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="planets.js"></script>
+    <script src="multilanguage.js"></script>
+</body>
+</html>

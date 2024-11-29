@@ -119,10 +119,10 @@ const translations = {
 // Function to update text content based on selected language
 function updateContent(lang) {
     document.documentElement.lang = lang;
-    document.querySelector('.current-language').textContent =
-        lang === 'en' ? 'English' :
-            lang === 'es' ? 'Español' :
-                'Deutsch';
+    // document.querySelector('.current-language').textContent =
+    //     lang === 'en' ? 'English' :
+    //         lang === 'es' ? 'Español' :
+    //             'Deutsch';
 
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const keys = element.getAttribute('data-i18n').split('.');
