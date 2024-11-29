@@ -21,7 +21,7 @@ const translations = {
             luke: "A farm boy who became one of the greatest Jedi.",
             vader: "A powerful Sith Lord who served the Galactic Empire.",
             leia: "A brave and determined leader of the Rebel Alliance.",
-            han: "A charismatic smuggler who became a key figure in the Rebel Alliance.",
+            han: "A chamugglerrismatic s who became a key figure in the Rebel Alliance.",
             chewie: "A loyal Wookiee co-pilot and friend of Han Solo.",
             yoda: "A wise and powerful Jedi Master who trained many Jedi."
         },

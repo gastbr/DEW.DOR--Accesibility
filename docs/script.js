@@ -1,3 +1,15 @@
+// JQuery:
+/*
+Selection: $(), find(), each()
+Manipulation: text(), append(), html(), addClass(), removeClass(), toggleClass(), css()
+Events: ready(), click(), focus(), keydown(), on()
+Effects: show(), hide() (not explicitly used but potentially implied by toggleClass)
+Speech Synthesis (if supported): speak() (custom function utilizing other methods)
+Browser Features: is() (not used in this specific context, but potentially implied)
+Utility: toggleClass() (used twice, counted once)
+*/
+
+
 $(document).ready(function () {
     // Accessibility Controls
     let fontSize = 16;
@@ -111,6 +123,6 @@ $(document).ready(function () {
     $('.card').each(function () {
         const texto = $(this).find('.card-text').text();
         console.log(texto);
-        $(this).append('<div class="texto-absoluto"><p class="texto">' + texto + '</p></div>');
+        $(this).append('<div aria-labelledby="' + texto + '" class="texto-absoluto"><p href="#" class="texto" style="color: white; text-decoration: none;">' + texto + '</p></div>');
     });
 });
