@@ -57,10 +57,10 @@ $(document).ready(function () {
     });
 
     // Update progress bar
-    video.addEventListener('timeupdate', function () {
-        const percentage = (video.currentTime / video.duration) * 100;
-        progressBar.css('width', percentage + '%');
-    });
+    // video.addEventListener('timeupdate', function () {
+    //     const percentage = (video.currentTime / video.duration) * 100;
+    //     progressBar.css('width', percentage + '%');
+    // });
 
     // Navigation Announcements
     $('a').focus(function () {
