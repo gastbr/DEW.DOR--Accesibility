@@ -71,9 +71,12 @@
         <div class="hero-content">
             <h1 class="font-title" data-i18n="hero.title">Welcome to Star Wars Universe</h1>
             <p data-i18n="hero.subtitle">Explore the galaxy far, far away...</p>
-            <button class="btn btn-warning btn-lg" data-i18n="hero.cta">Start Your Journey</button>
+            <button id="playButton" class="btn btn-warning btn-lg" data-i18n="hero.cta">Start Your Journey</button>
         </div>
     </section>
+
+    <!-- Audio element -->
+    <audio id="audio" src="media/avehiculos.mp3" preload="auto"></audio>
 
     <header class="navbar">
         <nav>
@@ -135,6 +138,24 @@
     <script src="vehiculos.js"></script>
     <script src="multilanguage.js"></script>
     <script src="canvas.js"></script>
+    <script>
+        // Get the button and audio elements
+        const button = document.getElementById('playButton');
+        const audio = document.getElementById('audio');
+
+        // Event listener to toggle play/pause when the button is clicked
+        button.addEventListener('click', () => {
+            if (audio.paused) {
+                // If the audio is paused, play it
+                audio.play();
+                button.textContent = 'Start Your Journey 🎵'; // Change button text
+            } else {
+                // If the audio is playing, pause it
+                audio.pause();
+                button.textContent = 'Start Your Journey'; // Change button text back
+            }
+        });
+    </script>
 </body>
 
 </html>
